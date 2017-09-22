@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="Thonburi.ttc">
+            <string>Thonburi</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="High_Rise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDw-b1-Hlt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pJ8-15-cWC" appends="YES" id="okR-1h-FE7"/>
+                                </connections>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNb-bI-c7w">
+                                <rect key="frame" x="171" y="50" width="33.5" height="65.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI6-g0-eak">
+                                <rect key="frame" x="68.5" y="72.5" width="42.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys3-ie-PFD">
+                                <rect key="frame" x="174.5" y="135" width="25" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCe-pP-unx">
+                                <rect key="frame" x="124.5" y="298.5" width="126" height="89"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="66"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Rm-x7-We3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Perfect Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-pS-LaF">
+                                <rect key="frame" x="35.5" y="149" width="108.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iNb-bI-c7w" firstAttribute="leading" secondItem="hI6-g0-eak" secondAttribute="trailing" constant="60" id="20x-IF-g9a"/>
+                            <constraint firstItem="qeN-pS-LaF" firstAttribute="centerX" secondItem="hI6-g0-eak" secondAttribute="centerX" id="37J-HV-mdK"/>
+                            <constraint firstItem="bCe-pP-unx" firstAttribute="centerY" secondItem="sDw-b1-Hlt" secondAttribute="centerY" id="8qs-9L-yu1"/>
+                            <constraint firstItem="ys3-ie-PFD" firstAttribute="top" secondItem="iNb-bI-c7w" secondAttribute="bottom" constant="19.5" id="BJi-xA-tbM"/>
+                            <constraint firstItem="qeN-pS-LaF" firstAttribute="centerY" secondItem="ys3-ie-PFD" secondAttribute="centerY" id="BYp-Xs-j2s"/>
+                            <constraint firstItem="sDw-b1-Hlt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G6n-it-nax"/>
+                            <constraint firstItem="sDw-b1-Hlt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LGU-Fn-vWX"/>
+                            <constraint firstItem="hI6-g0-eak" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Psa-mL-VFi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sDw-b1-Hlt" secondAttribute="bottom" id="RcN-KW-LJT"/>
+                            <constraint firstItem="iNb-bI-c7w" firstAttribute="top" secondItem="sDw-b1-Hlt" secondAttribute="top" constant="30" id="RuL-cp-RpK"/>
+                            <constraint firstItem="iNb-bI-c7w" firstAttribute="centerX" secondItem="sDw-b1-Hlt" secondAttribute="centerX" id="a7A-6v-lhx"/>
+                            <constraint firstAttribute="trailing" secondItem="sDw-b1-Hlt" secondAttribute="trailing" id="nMF-33-MFf"/>
+                            <constraint firstItem="ys3-ie-PFD" firstAttribute="centerX" secondItem="iNb-bI-c7w" secondAttribute="centerX" id="q0x-wg-VtF"/>
+                            <constraint firstItem="hI6-g0-eak" firstAttribute="centerY" secondItem="iNb-bI-c7w" secondAttribute="centerY" id="rw3-Fa-AY7"/>
+                            <constraint firstItem="bCe-pP-unx" firstAttribute="centerX" secondItem="sDw-b1-Hlt" secondAttribute="centerX" id="uG8-qm-pqF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pLabel" destination="qeN-pS-LaF" id="b3d-4M-8Dd"/>
+                        <outlet property="perfectMatchLabel" destination="ys3-ie-PFD" id="EoR-tB-wYK"/>
+                        <outlet property="playButton" destination="bCe-pP-unx" id="ZnZ-vw-PAf"/>
+                        <outlet property="sLabel" destination="hI6-g0-eak" id="jLc-aW-L6u"/>
+                        <outlet property="scnView" destination="sDw-b1-Hlt" id="zN4-dc-Dac"/>
+                        <outlet property="scoreLabel" destination="iNb-bI-c7w" id="1oK-2P-8nx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pJ8-15-cWC">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="O8g-79-Mkj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
